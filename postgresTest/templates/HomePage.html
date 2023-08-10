@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/715/442/539/horizon-zero-dawn-playstation-4-wallpaper-preview.jpg");
+  color:aliceblue;
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+.btnad {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #000000;
+  font-size: 16px;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btnad:hover {
+  background: #4fade8;
+  text-decoration: none;
+}
+</style>
+
+<title >Photo Manangement </title>
+</head>
+
+<body class="bg">
+    
+    <center>
+    
+    <br>
+    <div id="banner">
+    <a href="{% url 'insertphoto' %}"> <button type="button" class="btnad">Insert Photos</button></a>
+    <a href="{% url 'showphoto' %}"> <button class="btnad">Show Photos</button></a>
+    <a href="{% url 'runquery' %}"> <button class="btnad">Run Query</button></a>
+    </div>
+    <br><br>
+        <h1> PHOTO MANAGEMENT </h1>
+        <div><p>project by : gaurav Shah(202001116)<br>
+                            Aditya kothari(202001115)
+        </p></div>
+</center>
+
+</body>
+</html>
